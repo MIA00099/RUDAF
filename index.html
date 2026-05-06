@@ -38,10 +38,10 @@
 
   <!-- Navigation -->
   <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex justify-between items-center bg-transparent relative z-50">
-    <div class="flex items-center gap-2">
-      <div class="w-4 h-4 bg-black rounded-full animate-pulse"></div>
-      <span class="text-2xl font-bold tracking-tight">RUDAF<span class="text-gray-400">.</span></span>
-    </div>
+    <a href="#" class="flex items-center gap-3 transition-transform hover:scale-105 duration-300">
+      <img src="image_946dd0.png" alt="RUDAF Construction Logo" class="h-8 md:h-10 w-auto object-contain" />
+      <span class="text-2xl font-bold tracking-tight text-black">RUDAF<span class="text-gray-400">.</span></span>
+    </a>
 
     <!-- Desktop Nav -->
     <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
@@ -192,47 +192,105 @@
       </div>
     </div>
 
-    <!-- SERVICES SECTION (NEW) -->
-    <div id="services" class="animate-on-scroll text-center mb-16 pt-16">
-      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-black text-white text-xs font-bold uppercase tracking-widest mb-4">
-        Our Expertise
+    <!-- SERVICES SECTION (EXPANDED "PAGE") -->
+    <div id="services" class="animate-on-scroll pt-20 mb-24">
+      <div class="text-center mb-16">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-black text-white text-xs font-bold uppercase tracking-widest mb-4">
+          Our Expertise
+        </div>
+        <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">Premium Services</h2>
+        <p class="text-gray-500 max-w-3xl mx-auto text-lg md:text-xl">
+          As a sought-after firm in the Kigali real estate market, we eliminate business friction by offering end-to-end, high-end construction solutions.
+        </p>
       </div>
-      <h2 class="text-3xl md:text-5xl font-bold tracking-tight mb-4">Premium Contracting Services</h2>
-      <p class="text-gray-500 max-w-2xl mx-auto text-lg">As a sought-after firm in the modernizing Kigali real estate market, we eliminate business friction by offering comprehensive, high-end construction solutions.</p>
-    </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-32">
-      <!-- Service 1 -->
-      <div class="animate-on-scroll bg-white rounded-[2rem] p-8 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 group" style="transition-delay: 0ms;">
-        <div class="w-14 h-14 bg-gray-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-black group-hover:text-white transition-colors duration-300">
-          <i data-lucide="building-2" class="w-7 h-7"></i>
+      <div class="space-y-24">
+        <!-- Service 1: Commercial -->
+        <div class="flex flex-col lg:flex-row items-center gap-12 group">
+          <div class="w-full lg:w-1/2 h-[400px] md:h-[500px] rounded-[3rem] overflow-hidden shadow-xl relative">
+            <img src="1.jpg" alt="Commercial Build" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
+          </div>
+          <div class="w-full lg:w-1/2 space-y-6 lg:pl-8">
+            <div class="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center text-black mb-6 shadow-sm">
+              <i data-lucide="building-2" class="w-8 h-8"></i>
+            </div>
+            <h3 class="text-3xl md:text-4xl font-bold">Commercial Developments</h3>
+            <p class="text-gray-500 text-lg leading-relaxed">
+              Large-scale commercial developments and corporate structures engineered for Kigali's rapidly modernizing business landscape. We specialize in multi-story complexes, maximizing plot value with efficient, high-quality builds.
+            </p>
+            <ul class="space-y-4 mt-6">
+              <li class="flex items-center gap-3 text-gray-700 font-medium"><i data-lucide="check-circle-2" class="w-6 h-6 text-green-500"></i> Multi-Unit & Apartment Complexes</li>
+              <li class="flex items-center gap-3 text-gray-700 font-medium"><i data-lucide="check-circle-2" class="w-6 h-6 text-green-500"></i> Office Spaces & Retail Facades</li>
+              <li class="flex items-center gap-3 text-gray-700 font-medium"><i data-lucide="check-circle-2" class="w-6 h-6 text-green-500"></i> Advanced Structural Engineering</li>
+            </ul>
+          </div>
         </div>
-        <h4 class="text-xl font-bold mb-3">Commercial Build</h4>
-        <p class="text-gray-500 text-sm leading-relaxed">Large-scale commercial developments and corporate structures engineered for Kigali's rapidly modernizing business landscape.</p>
-      </div>
-      <!-- Service 2 -->
-      <div class="animate-on-scroll bg-white rounded-[2rem] p-8 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 group" style="transition-delay: 100ms;">
-        <div class="w-14 h-14 bg-gray-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-black group-hover:text-white transition-colors duration-300">
-          <i data-lucide="home" class="w-7 h-7"></i>
+
+        <!-- Service 2: Residential -->
+        <div class="flex flex-col lg:flex-row-reverse items-center gap-12 group">
+          <div class="w-full lg:w-1/2 h-[400px] md:h-[500px] rounded-[3rem] overflow-hidden shadow-xl relative">
+            <img src="2.jpg" alt="Luxury Residential" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
+          </div>
+          <div class="w-full lg:w-1/2 space-y-6 lg:pr-8">
+            <div class="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center text-black mb-6 shadow-sm">
+              <i data-lucide="home" class="w-8 h-8"></i>
+            </div>
+            <h3 class="text-3xl md:text-4xl font-bold">Luxury Residential</h3>
+            <p class="text-gray-500 text-lg leading-relaxed">
+              Turn-key, high-end residential homes focusing on modern aesthetics, durable materials, and flawless architectural execution. We build private estates designed for longevity and visual impact.
+            </p>
+            <ul class="space-y-4 mt-6">
+              <li class="flex items-center gap-3 text-gray-700 font-medium"><i data-lucide="check-circle-2" class="w-6 h-6 text-green-500"></i> Custom Villa Construction</li>
+              <li class="flex items-center gap-3 text-gray-700 font-medium"><i data-lucide="check-circle-2" class="w-6 h-6 text-green-500"></i> Modern Architectural Elevations</li>
+              <li class="flex items-center gap-3 text-gray-700 font-medium"><i data-lucide="check-circle-2" class="w-6 h-6 text-green-500"></i> Premium Exterior Finishes</li>
+            </ul>
+          </div>
         </div>
-        <h4 class="text-xl font-bold mb-3">Luxury Residential</h4>
-        <p class="text-gray-500 text-sm leading-relaxed">High-end residential developments focusing on modern aesthetics, durable materials, and flawless architectural execution.</p>
-      </div>
-      <!-- Service 3 -->
-      <div class="animate-on-scroll bg-white rounded-[2rem] p-8 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 group" style="transition-delay: 200ms;">
-        <div class="w-14 h-14 bg-gray-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-black group-hover:text-white transition-colors duration-300">
-          <i data-lucide="hammer" class="w-7 h-7"></i>
+
+        <!-- Service 3: Interior Architecture -->
+        <div class="flex flex-col lg:flex-row items-center gap-12 group">
+          <div class="w-full lg:w-1/2 h-[400px] md:h-[500px] rounded-[3rem] overflow-hidden shadow-xl relative">
+            <img src="24c9dfea-4ce6-430c-9d7c-f17e287bb24b.jfif" alt="Interior Architecture" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
+          </div>
+          <div class="w-full lg:w-1/2 space-y-6 lg:pl-8">
+            <div class="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center text-black mb-6 shadow-sm">
+              <i data-lucide="hammer" class="w-8 h-8"></i>
+            </div>
+            <h3 class="text-3xl md:text-4xl font-bold">Interior Architecture & Details</h3>
+            <p class="text-gray-500 text-lg leading-relaxed">
+              We don't just build the shell; we perfect the inside. Custom joinery, bespoke drywall, intricate ceiling designs, and ambient lighting tailored for high-intent clients demanding premium finishing.
+            </p>
+            <ul class="space-y-4 mt-6">
+              <li class="flex items-center gap-3 text-gray-700 font-medium"><i data-lucide="check-circle-2" class="w-6 h-6 text-green-500"></i> Complex Ceiling Drops & Lighting</li>
+              <li class="flex items-center gap-3 text-gray-700 font-medium"><i data-lucide="check-circle-2" class="w-6 h-6 text-green-500"></i> Custom Media Rooms & Playrooms</li>
+              <li class="flex items-center gap-3 text-gray-700 font-medium"><i data-lucide="check-circle-2" class="w-6 h-6 text-green-500"></i> High-End Material Sourcing</li>
+            </ul>
+          </div>
         </div>
-        <h4 class="text-xl font-bold mb-3">Interior Renovation</h4>
-        <p class="text-gray-500 text-sm leading-relaxed">Custom joinery, bespoke drywall, ambient lighting, and comprehensive premium interior finishing for high-intent clients.</p>
-      </div>
-      <!-- Service 4 -->
-      <div class="animate-on-scroll bg-white rounded-[2rem] p-8 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 group" style="transition-delay: 300ms;">
-        <div class="w-14 h-14 bg-gray-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-black group-hover:text-white transition-colors duration-300">
-          <i data-lucide="briefcase" class="w-7 h-7"></i>
+
+        <!-- Service 4: 7-Day Operations -->
+        <div class="flex flex-col lg:flex-row-reverse items-center gap-12 group">
+          <div class="w-full lg:w-1/2 bg-black text-white h-[400px] md:h-[500px] rounded-[3rem] shadow-2xl p-10 md:p-16 flex flex-col justify-center relative overflow-hidden">
+            <div class="absolute -right-10 -bottom-10 text-9xl text-white/5 font-bold pointer-events-none select-none">24/7</div>
+            
+            <div class="relative z-10">
+              <div class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center text-green-400 mb-8 backdrop-blur-sm border border-white/20">
+                <i data-lucide="clock-4" class="w-8 h-8"></i>
+              </div>
+              <h3 class="text-3xl md:text-4xl font-bold mb-6">7-Day Fast-Track Execution</h3>
+              <p class="text-gray-400 text-lg leading-relaxed mb-10">
+                Unlike standard contractors, we operate intensely. Our full-scale project management runs 7 days a week, ensuring your development never stalls due to weekends or off-hours.
+              </p>
+              <a href="#contact" class="inline-flex items-center gap-3 text-white font-bold hover:text-green-400 transition-colors bg-white/10 px-6 py-3 rounded-full border border-white/20 w-max hover:bg-white/20">
+                Check Availability <i data-lucide="arrow-right" class="w-5 h-5"></i>
+              </a>
+            </div>
+          </div>
         </div>
-        <h4 class="text-xl font-bold mb-3">7-Day Execution</h4>
-        <p class="text-gray-500 text-sm leading-relaxed">Full-scale project management operating 7 days a week. We ensure your project never stalls due to weekends or off-hours.</p>
+
       </div>
     </div>
 
@@ -418,9 +476,10 @@
   
   <!-- Footer Bottom -->
   <footer class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8 text-center text-sm text-gray-500 border-t border-gray-200 pt-8 mt-12 flex flex-col md:flex-row justify-between items-center gap-4">
-    <div class="flex items-center gap-2">
-      <span class="font-bold text-black">RUDAF.</span>
-      <span id="copyright-text"></span>
+    <div class="flex items-center gap-3">
+      <img src="image_946dd0.png" alt="RUDAF Logo" class="h-6 w-auto object-contain opacity-80" />
+      <span class="font-bold text-black text-lg">RUDAF.</span>
+      <span id="copyright-text" class="ml-2"></span>
     </div>
     <div class="flex gap-6">
       <a href="#" class="hover:text-black transition-colors">Privacy Policy</a>
