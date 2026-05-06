@@ -2,11 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="theme-color" content="#111827">
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3YPDD9BZHN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-3YPDD9BZHN');
+  </script>
+  
+  <!-- Comprehensive SEO Meta Tags -->
   <title>RUDAF Construction LTD | Premium Execution in Kigali</title>
+  <meta name="description" content="RUDAF Construction LTD is a premium contracting firm in Kigali offering high-end commercial developments, luxury residential builds, and 7-day fast-track execution.">
+  <meta name="keywords" content="Construction Kigali, Premium Contractors Rwanda, Commercial Developments, Luxury Residential Builds, Interior Architecture Kigali, RUDAF Construction">
+  <meta name="author" content="RUDAF Construction LTD">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="RUDAF Construction LTD | Premium Execution">
+  <meta property="og:description" content="High-end commercial and residential contracting in Kigali. Operating 7 days a week to bring your vision to life.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.rudafconstruction.rw/">
+  <meta property="og:image" content="image_946dd0.png">
+
+  <!-- Performance Optimizations: Preload & Preconnect -->
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
+  <link rel="preconnect" href="https://unpkg.com" crossorigin>
+  <!-- Preload the heavy hero video to ensure zero loading delay -->
+  <link rel="preload" as="video" href="gemini_generated_video_a82a6d91.mp4" type="video/mp4">
+
+  <!-- Scripts -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Defer non-critical icon script to prevent render blocking -->
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+
   <style>
     /* Custom scrollbar and general body styling */
     body {
@@ -32,153 +65,182 @@
       opacity: 1;
       transform: translateY(0);
     }
+    
+    /* Smooth transform performance via GPU acceleration */
+    .will-change-transform {
+      will-change: transform, opacity;
+      backface-visibility: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    /* Mobile optimization: hide scrollbar for cleaner look on small screens */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
   </style>
 </head>
 <body class="pb-20 antialiased overflow-x-hidden">
 
-  <!-- Navigation -->
-  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex justify-between items-center bg-transparent relative z-50">
-    <a href="#" class="flex items-center gap-3 transition-transform hover:scale-105 duration-300">
-      <img src="image_946dd0.png" alt="RUDAF Construction Logo" class="h-8 md:h-10 w-auto object-contain" />
-      <span class="text-2xl font-bold tracking-tight text-black">RUDAF<span class="text-gray-400">.</span></span>
-    </a>
-
-    <!-- Desktop Nav -->
-    <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
-      <a href="#" class="text-black border-b-2 border-black pb-1">Home</a>
-      <a href="#services" class="hover:text-black transition-colors">Services</a>
-      <a href="#portfolio" class="hover:text-black transition-colors">Portfolio</a>
-      <a href="#contact" class="hover:text-black transition-colors">Contact</a>
-    </div>
-
-    <div class="hidden md:flex space-x-4">
-      <a href="#contact" class="px-5 py-2.5 text-sm font-medium text-gray-700 hover:text-black transition-colors">
-        Client Portal
+  <!-- Header & Navigation (Semantic Tag) -->
+  <header>
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 md:py-6 flex justify-between items-center bg-transparent relative z-[100]">
+      <a href="#" class="flex items-center gap-3 transition-transform hover:scale-105 duration-300" aria-label="RUDAF Construction Home">
+        <img src="image_946dd0.png" alt="RUDAF Construction Logo" class="h-8 md:h-10 w-auto object-contain" fetchpriority="high" />
+        <span class="text-2xl font-bold tracking-tight text-black">RUDAF<span class="text-gray-400">.</span></span>
       </a>
-      <a href="#contact" class="px-6 py-2.5 text-sm font-medium bg-black text-white rounded-full hover:bg-gray-800 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 duration-200">
-        Get a Quote
-      </a>
+
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
+        <a href="#" class="text-black border-b-2 border-black pb-1">Home</a>
+        <a href="#services" class="hover:text-black transition-colors">Services</a>
+        <a href="#portfolio" class="hover:text-black transition-colors">Portfolio</a>
+        <a href="#contact" class="hover:text-black transition-colors">Contact</a>
+      </div>
+
+      <div class="hidden md:flex space-x-4">
+        <a href="#contact" class="px-5 py-2.5 text-sm font-medium text-gray-700 hover:text-black transition-colors">
+          Client Portal
+        </a>
+        <a href="#contact" class="px-6 py-2.5 text-sm font-medium bg-black text-white rounded-full hover:bg-gray-800 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 duration-200">
+          Get a Quote
+        </a>
+      </div>
+
+      <!-- Mobile Toggle -->
+      <button id="mobile-menu-btn" class="md:hidden p-2 text-black touch-manipulation" aria-label="Toggle Navigation Menu">
+        <i data-lucide="menu" id="menu-icon"></i>
+        <i data-lucide="x" id="close-icon" class="hidden"></i>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-4 right-4 bg-white/95 backdrop-blur-xl rounded-2xl shadow-2xl z-[90] p-6 flex-col space-y-4 border border-gray-100">
+      <a href="#" class="font-medium text-lg py-2">Home</a>
+      <a href="#services" class="font-medium text-lg text-gray-600 py-2">Services</a>
+      <a href="#portfolio" class="font-medium text-lg text-gray-600 py-2">Portfolio</a>
+      <a href="#contact" class="mt-4 block w-full py-4 bg-black text-white rounded-xl font-medium text-center shadow-lg active:scale-95 transition-transform">Get a Quote</a>
     </div>
+  </header>
 
-    <!-- Mobile Toggle -->
-    <button id="mobile-menu-btn" class="md:hidden p-2 text-black" aria-label="Toggle Menu">
-      <i data-lucide="menu" id="menu-icon"></i>
-      <i data-lucide="x" id="close-icon" class="hidden"></i>
-    </button>
-  </nav>
-
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-4 right-4 bg-white rounded-2xl shadow-xl z-50 p-6 flex-col space-y-4">
-    <a href="#" class="font-medium text-lg">Home</a>
-    <a href="#services" class="font-medium text-lg text-gray-600">Services</a>
-    <a href="#portfolio" class="font-medium text-lg text-gray-600">Portfolio</a>
-    <a href="#contact" class="mt-4 block w-full py-3 bg-black text-white rounded-xl font-medium text-center">Get a Quote</a>
-  </div>
-
-  <!-- Main Container -->
+  <!-- Main Content Container -->
   <main class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
     
     <!-- HERO SECTION -->
-    <div class="animate-on-scroll relative w-full h-[70vh] md:h-[80vh] rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-2xl mb-32 group">
-      <!-- Background Video -->
-      <video 
-        src="gemini_generated_video_a82a6d91.mp4" 
-        autoplay 
-        loop 
-        muted 
-        playsinline
-        class="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[20s] ease-out"
-      ></video>
-      <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/20"></div>
-      
-      <!-- Hero Content -->
-      <div class="absolute inset-0 flex flex-col justify-center px-8 md:px-16 lg:px-24">
-        <div class="animate-on-scroll" style="transition-delay: 200ms;">
-          <div class="flex items-center gap-2 mb-4">
-            <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-            <span class="text-green-400 font-medium text-sm tracking-wide uppercase">Fully Active in Kigali</span>
+    <section class="animate-on-scroll mb-40 md:mb-48 relative z-10 w-full" aria-label="Hero Introduction">
+      <!-- Changed to svh for proper mobile browser height rendering -->
+      <div id="hero-container" class="relative w-full h-[85svh] md:h-[85vh] rounded-[2rem] md:rounded-[3rem] shadow-2xl group origin-top will-change-transform bg-black">
+        
+        <!-- Inner Background Wrapper for rounded corners -->
+        <div class="absolute inset-0 w-full h-full rounded-[2rem] md:rounded-[3rem] overflow-hidden">
+          <video 
+            id="hero-video"
+            src="gemini_generated_video_a82a6d91.mp4" 
+            autoplay 
+            loop 
+            muted 
+            playsinline
+            preload="auto"
+            class="absolute inset-0 w-full h-full object-cover transform scale-105 will-change-transform"
+          ></video>
+          <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/30"></div>
+        </div>
+        
+        <!-- Hero Content -->
+        <div id="hero-text" class="absolute inset-0 flex flex-col justify-center px-6 sm:px-8 md:px-16 lg:px-24 will-change-transform pointer-events-none">
+          <div class="animate-on-scroll" style="transition-delay: 200ms;">
+            <div class="flex items-center gap-2 mb-4">
+              <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+              <span class="text-green-400 font-medium text-xs sm:text-sm tracking-wide uppercase">Fully Active in Kigali</span>
+            </div>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white max-w-3xl leading-[1.15] tracking-tight">
+              Building Kigali's Future, <br class="hidden sm:block"/><span class="text-gray-300">7 Days a Week.</span>
+            </h1>
           </div>
-          <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white max-w-3xl leading-[1.1] tracking-tight">
-            Building Kigali's Future, <span class="text-gray-300">7 Days a Week.</span>
-          </h1>
-        </div>
-        <div class="animate-on-scroll" style="transition-delay: 400ms;">
-          <p class="mt-6 text-lg md:text-xl text-gray-200 max-w-xl font-light">
-            We are a sought-after contracting firm delivering premium residential and commercial projects. Your physical space transformed with unmatched clarity and speed.
-          </p>
-        </div>
-      </div>
-
-      <!-- Floating Lead Capture Bar ("Always Open" Sales Engine) -->
-      <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-11/12 max-w-5xl z-20">
-        <div class="animate-on-scroll" style="transition-delay: 600ms;">
-          <div class="bg-white rounded-[2rem] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] p-4 md:p-6 flex flex-col md:flex-row items-center justify-between gap-4 border border-gray-100 relative">
-            
-            <!-- Tabs -->
-            <div class="absolute -top-10 left-8 flex space-x-6">
-              <button class="tab-btn text-sm font-semibold pb-2 border-b-2 transition-all border-black text-black">
-                Consultation
-              </button>
-              <button class="tab-btn text-sm font-semibold pb-2 border-b-2 transition-all border-transparent text-gray-400 hover:text-gray-200">
-                Project Estimate
-              </button>
-            </div>
-
-            <div class="flex-1 w-full grid grid-cols-1 md:grid-cols-3 gap-4 divide-y md:divide-y-0 md:divide-x divide-gray-100">
-              <div class="px-4 py-2 flex flex-col justify-center cursor-pointer group">
-                <span class="text-xs text-gray-400 font-medium mb-1 group-hover:text-gray-600 transition-colors">Service Needed</span>
-                <select class="w-full text-sm font-semibold bg-transparent outline-none appearance-none cursor-pointer">
-                  <option>Commercial Build</option>
-                  <option>Luxury Residential</option>
-                  <option>Architectural Design</option>
-                  <option>Interior Renovation</option>
-                </select>
-              </div>
-              <div class="px-4 py-2 flex flex-col justify-center cursor-pointer group">
-                <span class="text-xs text-gray-400 font-medium mb-1 group-hover:text-gray-600 transition-colors">Timeline</span>
-                <select class="w-full text-sm font-semibold bg-transparent outline-none appearance-none cursor-pointer">
-                  <option>Immediate Start</option>
-                  <option>Next 3 Months</option>
-                  <option>Planning Phase</option>
-                </select>
-              </div>
-              <div class="px-4 py-2 flex flex-col justify-center cursor-pointer group">
-                <span class="text-xs text-gray-400 font-medium mb-1 group-hover:text-gray-600 transition-colors">Project Scale</span>
-                <select class="w-full text-sm font-semibold bg-transparent outline-none appearance-none cursor-pointer">
-                  <option>Full Development</option>
-                  <option>Mid-Size Build</option>
-                  <option>Specialized Task</option>
-                </select>
-              </div>
-            </div>
-
-            <a href="#contact" class="w-full md:w-auto mt-4 md:mt-0 bg-black text-white px-8 py-4 rounded-2xl font-medium flex items-center justify-center gap-2 hover:bg-gray-800 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-              Start Project <i data-lucide="arrow-right" class="w-4 h-4"></i>
-            </a>
+          <div class="animate-on-scroll" style="transition-delay: 400ms;">
+            <p class="mt-6 text-base sm:text-lg md:text-xl text-gray-200 max-w-xl font-light leading-relaxed">
+              We are a sought-after contracting firm delivering premium residential and commercial projects. Your physical space transformed with unmatched clarity and speed.
+            </p>
           </div>
         </div>
+
+        <!-- Floating Lead Capture Bar (Optimized for Mobile Stacking) -->
+        <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-[95%] sm:w-11/12 max-w-5xl z-20 pointer-events-auto">
+          <div class="animate-on-scroll" style="transition-delay: 600ms;">
+            <div class="bg-white rounded-[1.5rem] md:rounded-[2rem] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.2)] p-4 md:p-6 flex flex-col lg:flex-row items-center justify-between gap-4 border border-gray-100 relative">
+              
+              <!-- Tabs -->
+              <div class="absolute -top-10 left-6 md:left-8 flex space-x-4 md:space-x-6 overflow-x-auto no-scrollbar w-full md:w-auto pr-6 md:pr-0">
+                <button class="tab-btn text-sm font-semibold pb-2 border-b-2 transition-all border-black text-black whitespace-nowrap touch-manipulation">
+                  Consultation
+                </button>
+                <button class="tab-btn text-sm font-semibold pb-2 border-b-2 transition-all border-transparent text-gray-400 hover:text-gray-200 whitespace-nowrap touch-manipulation">
+                  Project Estimate
+                </button>
+              </div>
+
+              <div class="flex-1 w-full grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 divide-y sm:divide-y-0 sm:divide-x divide-gray-100">
+                <div class="px-2 sm:px-4 py-2 flex flex-col justify-center cursor-pointer group relative">
+                  <label for="service-select" class="text-xs text-gray-400 font-medium mb-1 group-hover:text-gray-600 transition-colors">Service Needed</label>
+                  <select id="service-select" class="w-full text-sm font-semibold bg-transparent outline-none appearance-none cursor-pointer py-1 touch-manipulation">
+                    <option>Commercial Build</option>
+                    <option>Luxury Residential</option>
+                    <option>Architectural Design</option>
+                    <option>Interior Renovation</option>
+                  </select>
+                  <i data-lucide="chevron-down" class="w-4 h-4 text-gray-400 absolute right-2 sm:right-4 bottom-3 pointer-events-none"></i>
+                </div>
+                <div class="px-2 sm:px-4 py-2 flex flex-col justify-center cursor-pointer group relative">
+                  <label for="timeline-select" class="text-xs text-gray-400 font-medium mb-1 group-hover:text-gray-600 transition-colors">Timeline</label>
+                  <select id="timeline-select" class="w-full text-sm font-semibold bg-transparent outline-none appearance-none cursor-pointer py-1 touch-manipulation">
+                    <option>Immediate Start</option>
+                    <option>Next 3 Months</option>
+                    <option>Planning Phase</option>
+                  </select>
+                  <i data-lucide="chevron-down" class="w-4 h-4 text-gray-400 absolute right-2 sm:right-4 bottom-3 pointer-events-none"></i>
+                </div>
+                <div class="px-2 sm:px-4 py-2 flex flex-col justify-center cursor-pointer group relative">
+                  <label for="scale-select" class="text-xs text-gray-400 font-medium mb-1 group-hover:text-gray-600 transition-colors">Project Scale</label>
+                  <select id="scale-select" class="w-full text-sm font-semibold bg-transparent outline-none appearance-none cursor-pointer py-1 touch-manipulation">
+                    <option>Full Development</option>
+                    <option>Mid-Size Build</option>
+                    <option>Specialized Task</option>
+                  </select>
+                  <i data-lucide="chevron-down" class="w-4 h-4 text-gray-400 absolute right-2 sm:right-4 bottom-3 pointer-events-none"></i>
+                </div>
+              </div>
+
+              <a href="#contact" class="w-full lg:w-auto mt-4 lg:mt-0 bg-black text-white px-6 md:px-8 py-3 md:py-4 rounded-xl md:rounded-2xl font-medium flex items-center justify-center gap-2 hover:bg-gray-800 transition-all shadow-lg hover:shadow-xl active:scale-95 touch-manipulation">
+                Start Project <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
     <!-- VALUE PROPOSITION ROW -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-32 mt-12 px-4 md:px-0">
-      <div class="animate-on-scroll bg-white border border-gray-100 rounded-[2rem] p-8 shadow-sm hover:shadow-md transition-shadow" style="transition-delay: 100ms;">
+    <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-24 md:mb-32 mt-12 md:mt-20 px-2 md:px-0" aria-label="Why Choose Us">
+      <article class="animate-on-scroll bg-white border border-gray-100 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow" style="transition-delay: 100ms;">
         <div class="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center mb-6">
           <i data-lucide="shield-check" class="w-6 h-6"></i>
         </div>
         <h3 class="text-xl font-bold mb-3">Verified Local Identity</h3>
         <p class="text-gray-500 text-sm leading-relaxed">Operating legally and physically from KG 14 Ave. We are a known, trusted entity in the Kigali real estate market, ready to handle high-intent, profitable clients.</p>
-      </div>
+      </article>
 
-      <div class="animate-on-scroll bg-white border border-gray-100 rounded-[2rem] p-8 shadow-sm hover:shadow-md transition-shadow" style="transition-delay: 200ms;">
+      <article class="animate-on-scroll bg-white border border-gray-100 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow" style="transition-delay: 200ms;">
         <div class="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center mb-6">
           <i data-lucide="clock-4" class="w-6 h-6"></i>
         </div>
         <h3 class="text-xl font-bold mb-3">Always Open Operations</h3>
         <p class="text-gray-500 text-sm leading-relaxed">We work just as hard as you do. With our extended operating hours running 7 days a week, we ensure your project never stalls due to weekends.</p>
-      </div>
+      </article>
 
-      <div class="animate-on-scroll bg-black text-white rounded-[2rem] p-8 shadow-xl relative overflow-hidden" style="transition-delay: 300ms;">
+      <article class="animate-on-scroll bg-black text-white rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-8 shadow-xl relative overflow-hidden sm:col-span-2 lg:col-span-1" style="transition-delay: 300ms;">
          <div class="absolute -right-10 -top-10 text-9xl text-white/5 font-bold pointer-events-none select-none">
           KGL
         </div>
@@ -189,219 +251,214 @@
           <h3 class="text-xl font-bold mb-3">No Friction. Just Execution.</h3>
           <p class="text-gray-400 text-sm leading-relaxed">Our digital hub filters out the noise. When you connect with us, you are speaking directly to a premium team ready for execution.</p>
         </div>
-      </div>
-    </div>
+      </article>
+    </section>
 
     <!-- SERVICES SECTION (EXPANDED "PAGE") -->
-    <div id="services" class="animate-on-scroll pt-20 mb-24">
-      <div class="text-center mb-16">
+    <section id="services" class="animate-on-scroll pt-12 md:pt-20 mb-24 md:mb-32 scroll-mt-24" aria-label="Our Services">
+      <div class="text-center mb-12 md:mb-16">
         <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-black text-white text-xs font-bold uppercase tracking-widest mb-4">
           Our Expertise
         </div>
-        <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">Premium Services</h2>
-        <p class="text-gray-500 max-w-3xl mx-auto text-lg md:text-xl">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-4 md:mb-6">Premium Services</h2>
+        <p class="text-gray-500 max-w-3xl mx-auto text-base md:text-lg lg:text-xl">
           As a sought-after firm in the Kigali real estate market, we eliminate business friction by offering end-to-end, high-end construction solutions.
         </p>
       </div>
 
-      <div class="space-y-24">
+      <div class="space-y-16 md:space-y-24">
         <!-- Service 1: Commercial -->
-        <div class="flex flex-col lg:flex-row items-center gap-12 group">
-          <div class="w-full lg:w-1/2 h-[400px] md:h-[500px] rounded-[3rem] overflow-hidden shadow-xl relative">
-            <img src="1.jpg" alt="Commercial Build" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+        <article class="flex flex-col lg:flex-row items-center gap-8 md:gap-12 group">
+          <div class="w-full lg:w-1/2 h-[300px] sm:h-[400px] md:h-[500px] rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-xl relative">
+            <img src="1.jpg" alt="Commercial Developments in Kigali" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
             <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
           </div>
-          <div class="w-full lg:w-1/2 space-y-6 lg:pl-8">
-            <div class="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center text-black mb-6 shadow-sm">
-              <i data-lucide="building-2" class="w-8 h-8"></i>
+          <div class="w-full lg:w-1/2 space-y-4 md:space-y-6 lg:pl-8">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-gray-100 rounded-2xl flex items-center justify-center text-black mb-4 md:mb-6 shadow-sm">
+              <i data-lucide="building-2" class="w-7 h-7 md:w-8 md:h-8"></i>
             </div>
-            <h3 class="text-3xl md:text-4xl font-bold">Commercial Developments</h3>
-            <p class="text-gray-500 text-lg leading-relaxed">
+            <h3 class="text-2xl sm:text-3xl md:text-4xl font-bold">Commercial Developments</h3>
+            <p class="text-gray-500 text-base md:text-lg leading-relaxed">
               Large-scale commercial developments and corporate structures engineered for Kigali's rapidly modernizing business landscape. We specialize in multi-story complexes, maximizing plot value with efficient, high-quality builds.
             </p>
-            <ul class="space-y-4 mt-6">
-              <li class="flex items-center gap-3 text-gray-700 font-medium"><i data-lucide="check-circle-2" class="w-6 h-6 text-green-500"></i> Multi-Unit & Apartment Complexes</li>
-              <li class="flex items-center gap-3 text-gray-700 font-medium"><i data-lucide="check-circle-2" class="w-6 h-6 text-green-500"></i> Office Spaces & Retail Facades</li>
-              <li class="flex items-center gap-3 text-gray-700 font-medium"><i data-lucide="check-circle-2" class="w-6 h-6 text-green-500"></i> Advanced Structural Engineering</li>
+            <ul class="space-y-3 md:space-y-4 mt-4 md:mt-6">
+              <li class="flex items-center gap-3 text-sm md:text-base text-gray-700 font-medium"><i data-lucide="check-circle-2" class="w-5 h-5 text-green-500 flex-shrink-0"></i> Multi-Unit & Apartment Complexes</li>
+              <li class="flex items-center gap-3 text-sm md:text-base text-gray-700 font-medium"><i data-lucide="check-circle-2" class="w-5 h-5 text-green-500 flex-shrink-0"></i> Office Spaces & Retail Facades</li>
+              <li class="flex items-center gap-3 text-sm md:text-base text-gray-700 font-medium"><i data-lucide="check-circle-2" class="w-5 h-5 text-green-500 flex-shrink-0"></i> Advanced Structural Engineering</li>
             </ul>
           </div>
-        </div>
+        </article>
 
         <!-- Service 2: Residential -->
-        <div class="flex flex-col lg:flex-row-reverse items-center gap-12 group">
-          <div class="w-full lg:w-1/2 h-[400px] md:h-[500px] rounded-[3rem] overflow-hidden shadow-xl relative">
-            <img src="2.jpg" alt="Luxury Residential" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+        <article class="flex flex-col lg:flex-row-reverse items-center gap-8 md:gap-12 group">
+          <div class="w-full lg:w-1/2 h-[300px] sm:h-[400px] md:h-[500px] rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-xl relative">
+            <img src="2.jpg" alt="Luxury Residential Homes" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
             <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
           </div>
-          <div class="w-full lg:w-1/2 space-y-6 lg:pr-8">
-            <div class="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center text-black mb-6 shadow-sm">
-              <i data-lucide="home" class="w-8 h-8"></i>
+          <div class="w-full lg:w-1/2 space-y-4 md:space-y-6 lg:pr-8">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-gray-100 rounded-2xl flex items-center justify-center text-black mb-4 md:mb-6 shadow-sm">
+              <i data-lucide="home" class="w-7 h-7 md:w-8 md:h-8"></i>
             </div>
-            <h3 class="text-3xl md:text-4xl font-bold">Luxury Residential</h3>
-            <p class="text-gray-500 text-lg leading-relaxed">
+            <h3 class="text-2xl sm:text-3xl md:text-4xl font-bold">Luxury Residential</h3>
+            <p class="text-gray-500 text-base md:text-lg leading-relaxed">
               Turn-key, high-end residential homes focusing on modern aesthetics, durable materials, and flawless architectural execution. We build private estates designed for longevity and visual impact.
             </p>
-            <ul class="space-y-4 mt-6">
-              <li class="flex items-center gap-3 text-gray-700 font-medium"><i data-lucide="check-circle-2" class="w-6 h-6 text-green-500"></i> Custom Villa Construction</li>
-              <li class="flex items-center gap-3 text-gray-700 font-medium"><i data-lucide="check-circle-2" class="w-6 h-6 text-green-500"></i> Modern Architectural Elevations</li>
-              <li class="flex items-center gap-3 text-gray-700 font-medium"><i data-lucide="check-circle-2" class="w-6 h-6 text-green-500"></i> Premium Exterior Finishes</li>
+            <ul class="space-y-3 md:space-y-4 mt-4 md:mt-6">
+              <li class="flex items-center gap-3 text-sm md:text-base text-gray-700 font-medium"><i data-lucide="check-circle-2" class="w-5 h-5 text-green-500 flex-shrink-0"></i> Custom Villa Construction</li>
+              <li class="flex items-center gap-3 text-sm md:text-base text-gray-700 font-medium"><i data-lucide="check-circle-2" class="w-5 h-5 text-green-500 flex-shrink-0"></i> Modern Architectural Elevations</li>
+              <li class="flex items-center gap-3 text-sm md:text-base text-gray-700 font-medium"><i data-lucide="check-circle-2" class="w-5 h-5 text-green-500 flex-shrink-0"></i> Premium Exterior Finishes</li>
             </ul>
           </div>
-        </div>
+        </article>
 
         <!-- Service 3: Interior Architecture -->
-        <div class="flex flex-col lg:flex-row items-center gap-12 group">
-          <div class="w-full lg:w-1/2 h-[400px] md:h-[500px] rounded-[3rem] overflow-hidden shadow-xl relative">
-            <img src="24c9dfea-4ce6-430c-9d7c-f17e287bb24b.jfif" alt="Interior Architecture" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+        <article class="flex flex-col lg:flex-row items-center gap-8 md:gap-12 group">
+          <div class="w-full lg:w-1/2 h-[300px] sm:h-[400px] md:h-[500px] rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-xl relative">
+            <img src="24c9dfea-4ce6-430c-9d7c-f17e287bb24b.jfif" alt="Interior Architecture and Joinery" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
             <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
           </div>
-          <div class="w-full lg:w-1/2 space-y-6 lg:pl-8">
-            <div class="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center text-black mb-6 shadow-sm">
-              <i data-lucide="hammer" class="w-8 h-8"></i>
+          <div class="w-full lg:w-1/2 space-y-4 md:space-y-6 lg:pl-8">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-gray-100 rounded-2xl flex items-center justify-center text-black mb-4 md:mb-6 shadow-sm">
+              <i data-lucide="hammer" class="w-7 h-7 md:w-8 md:h-8"></i>
             </div>
-            <h3 class="text-3xl md:text-4xl font-bold">Interior Architecture & Details</h3>
-            <p class="text-gray-500 text-lg leading-relaxed">
+            <h3 class="text-2xl sm:text-3xl md:text-4xl font-bold">Interior Architecture & Details</h3>
+            <p class="text-gray-500 text-base md:text-lg leading-relaxed">
               We don't just build the shell; we perfect the inside. Custom joinery, bespoke drywall, intricate ceiling designs, and ambient lighting tailored for high-intent clients demanding premium finishing.
             </p>
-            <ul class="space-y-4 mt-6">
-              <li class="flex items-center gap-3 text-gray-700 font-medium"><i data-lucide="check-circle-2" class="w-6 h-6 text-green-500"></i> Complex Ceiling Drops & Lighting</li>
-              <li class="flex items-center gap-3 text-gray-700 font-medium"><i data-lucide="check-circle-2" class="w-6 h-6 text-green-500"></i> Custom Media Rooms & Playrooms</li>
-              <li class="flex items-center gap-3 text-gray-700 font-medium"><i data-lucide="check-circle-2" class="w-6 h-6 text-green-500"></i> High-End Material Sourcing</li>
+            <ul class="space-y-3 md:space-y-4 mt-4 md:mt-6">
+              <li class="flex items-center gap-3 text-sm md:text-base text-gray-700 font-medium"><i data-lucide="check-circle-2" class="w-5 h-5 text-green-500 flex-shrink-0"></i> Complex Ceiling Drops & Lighting</li>
+              <li class="flex items-center gap-3 text-sm md:text-base text-gray-700 font-medium"><i data-lucide="check-circle-2" class="w-5 h-5 text-green-500 flex-shrink-0"></i> Custom Media Rooms & Playrooms</li>
+              <li class="flex items-center gap-3 text-sm md:text-base text-gray-700 font-medium"><i data-lucide="check-circle-2" class="w-5 h-5 text-green-500 flex-shrink-0"></i> High-End Material Sourcing</li>
             </ul>
           </div>
-        </div>
+        </article>
 
         <!-- Service 4: 7-Day Operations -->
-        <div class="flex flex-col lg:flex-row-reverse items-center gap-12 group">
-          <div class="w-full lg:w-1/2 bg-black text-white h-[400px] md:h-[500px] rounded-[3rem] shadow-2xl p-10 md:p-16 flex flex-col justify-center relative overflow-hidden">
-            <div class="absolute -right-10 -bottom-10 text-9xl text-white/5 font-bold pointer-events-none select-none">24/7</div>
+        <article class="flex flex-col lg:flex-row-reverse items-center gap-8 md:gap-12 group">
+          <div class="w-full lg:w-1/2 bg-black text-white min-h-[350px] md:h-[500px] rounded-[2rem] md:rounded-[3rem] shadow-2xl p-8 md:p-16 flex flex-col justify-center relative overflow-hidden">
+            <div class="absolute -right-10 -bottom-10 text-8xl md:text-9xl text-white/5 font-bold pointer-events-none select-none">24/7</div>
             
             <div class="relative z-10">
-              <div class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center text-green-400 mb-8 backdrop-blur-sm border border-white/20">
-                <i data-lucide="clock-4" class="w-8 h-8"></i>
+              <div class="w-14 h-14 md:w-16 md:h-16 bg-white/10 rounded-2xl flex items-center justify-center text-green-400 mb-6 md:mb-8 backdrop-blur-sm border border-white/20">
+                <i data-lucide="clock-4" class="w-7 h-7 md:w-8 md:h-8"></i>
               </div>
-              <h3 class="text-3xl md:text-4xl font-bold mb-6">7-Day Fast-Track Execution</h3>
-              <p class="text-gray-400 text-lg leading-relaxed mb-10">
+              <h3 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6">7-Day Fast-Track Execution</h3>
+              <p class="text-gray-400 text-base md:text-lg leading-relaxed mb-8 md:mb-10">
                 Unlike standard contractors, we operate intensely. Our full-scale project management runs 7 days a week, ensuring your development never stalls due to weekends or off-hours.
               </p>
-              <a href="#contact" class="inline-flex items-center gap-3 text-white font-bold hover:text-green-400 transition-colors bg-white/10 px-6 py-3 rounded-full border border-white/20 w-max hover:bg-white/20">
+              <a href="#contact" class="inline-flex items-center gap-3 text-white font-bold hover:text-green-400 transition-colors bg-white/10 px-6 py-3 md:py-4 rounded-full border border-white/20 w-full md:w-max justify-center hover:bg-white/20 touch-manipulation active:scale-95">
                 Check Availability <i data-lucide="arrow-right" class="w-5 h-5"></i>
               </a>
             </div>
           </div>
-        </div>
+        </article>
 
       </div>
-    </div>
+    </section>
 
     <!-- PORTFOLIO SECTION -->
-    <div id="portfolio" class="animate-on-scroll text-center mb-16 pt-16">
+    <section id="portfolio" class="animate-on-scroll text-center mb-12 md:mb-16 pt-12 md:pt-16 scroll-mt-24" aria-label="Portfolio Showcase">
       <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-black text-white text-xs font-bold uppercase tracking-widest mb-4">
         Our Portfolio
       </div>
-      <h2 class="text-3xl md:text-5xl font-bold tracking-tight mb-4">Visual Proof of Competence</h2>
-      <p class="text-gray-500 max-w-2xl mx-auto text-lg">Presenting our completed builds with the clarity of a premium lens. From modern commercial structures to custom architectural interiors.</p>
-    </div>
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-4">Visual Proof of Competence</h2>
+      <p class="text-gray-500 max-w-2xl mx-auto text-base md:text-lg">Presenting our completed builds with the clarity of a premium lens. From modern commercial structures to custom architectural interiors.</p>
+    </section>
 
     <!-- Ultra-High-Definition Project Showcase Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-32">
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-24 md:mb-32">
       
-      <!-- Portfolio Item 1 -->
-      <div class="animate-on-scroll group cursor-pointer" style="transition-delay: 0ms;">
-        <div class="relative h-[380px] rounded-[2rem] overflow-hidden shadow-md group-hover:shadow-xl transition-all duration-500">
-          <img src="1.jpg" alt="Commercial Multi-Story Build" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
-          <div class="absolute bottom-6 left-6 right-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-            <span class="text-green-400 text-xs font-bold uppercase tracking-wider mb-2 block">Commercial Build</span>
-            <h4 class="text-xl font-bold mb-1">Premium Multi-Unit Complex</h4>
-            <p class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">Large-scale structural execution with modern exterior lighting and glass facades.</p>
+      <!-- Portfolio Items (Optimized with lazy loading and async decoding) -->
+      <article class="animate-on-scroll group cursor-pointer touch-manipulation" style="transition-delay: 0ms;">
+        <div class="relative h-[300px] sm:h-[350px] md:h-[380px] rounded-[1.5rem] md:rounded-[2rem] overflow-hidden shadow-md group-hover:shadow-xl transition-all duration-500">
+          <img src="1.jpg" alt="Commercial Multi-Story Build" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div class="absolute bottom-4 md:bottom-6 left-4 md:left-6 right-4 md:right-6 text-white transform translate-y-2 md:translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+            <span class="text-green-400 text-[10px] md:text-xs font-bold uppercase tracking-wider mb-2 block">Commercial Build</span>
+            <h4 class="text-lg md:text-xl font-bold mb-1">Premium Multi-Unit Complex</h4>
+            <p class="text-gray-300 text-xs md:text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 line-clamp-2">Large-scale structural execution with modern exterior lighting and glass facades.</p>
           </div>
         </div>
-      </div>
+      </article>
 
-      <!-- Portfolio Item 2 -->
-      <div class="animate-on-scroll group cursor-pointer" style="transition-delay: 100ms;">
-        <div class="relative h-[380px] rounded-[2rem] overflow-hidden shadow-md group-hover:shadow-xl transition-all duration-500">
-          <img src="2.jpg" alt="Luxury Residential Elevation" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
-          <div class="absolute bottom-6 left-6 right-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-            <span class="text-green-400 text-xs font-bold uppercase tracking-wider mb-2 block">Luxury Residential</span>
-            <h4 class="text-xl font-bold mb-1">Modern Architectural Estate</h4>
-            <p class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">High-end residential development focusing on aesthetic curves and durable materials.</p>
+      <article class="animate-on-scroll group cursor-pointer touch-manipulation" style="transition-delay: 100ms;">
+        <div class="relative h-[300px] sm:h-[350px] md:h-[380px] rounded-[1.5rem] md:rounded-[2rem] overflow-hidden shadow-md group-hover:shadow-xl transition-all duration-500">
+          <img src="2.jpg" alt="Luxury Residential Elevation" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div class="absolute bottom-4 md:bottom-6 left-4 md:left-6 right-4 md:right-6 text-white transform translate-y-2 md:translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+            <span class="text-green-400 text-[10px] md:text-xs font-bold uppercase tracking-wider mb-2 block">Luxury Residential</span>
+            <h4 class="text-lg md:text-xl font-bold mb-1">Modern Architectural Estate</h4>
+            <p class="text-gray-300 text-xs md:text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 line-clamp-2">High-end residential development focusing on aesthetic curves and durable materials.</p>
           </div>
         </div>
-      </div>
+      </article>
 
-      <!-- Portfolio Item 3 -->
-      <div class="animate-on-scroll group cursor-pointer" style="transition-delay: 200ms;">
-        <div class="relative h-[380px] rounded-[2rem] overflow-hidden shadow-md group-hover:shadow-xl transition-all duration-500">
-          <img src="e93bb6fa-4327-4e20-bc89-a50f39bdf387.jfif" alt="Interior Renovation and Joinery" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
-          <div class="absolute bottom-6 left-6 right-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-            <span class="text-green-400 text-xs font-bold uppercase tracking-wider mb-2 block">Interior Renovation</span>
-            <h4 class="text-xl font-bold mb-1">Custom Media & Playrooms</h4>
-            <p class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">Bespoke drywall, ambient backlighting, and custom interior finishing.</p>
+      <article class="animate-on-scroll group cursor-pointer touch-manipulation" style="transition-delay: 200ms;">
+        <div class="relative h-[300px] sm:h-[350px] md:h-[380px] rounded-[1.5rem] md:rounded-[2rem] overflow-hidden shadow-md group-hover:shadow-xl transition-all duration-500">
+          <img src="e93bb6fa-4327-4e20-bc89-a50f39bdf387.jfif" alt="Interior Renovation and Joinery" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div class="absolute bottom-4 md:bottom-6 left-4 md:left-6 right-4 md:right-6 text-white transform translate-y-2 md:translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+            <span class="text-green-400 text-[10px] md:text-xs font-bold uppercase tracking-wider mb-2 block">Interior Renovation</span>
+            <h4 class="text-lg md:text-xl font-bold mb-1">Custom Media & Playrooms</h4>
+            <p class="text-gray-300 text-xs md:text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 line-clamp-2">Bespoke drywall, ambient backlighting, and custom interior finishing.</p>
           </div>
         </div>
-      </div>
+      </article>
 
-      <!-- Portfolio Item 4 -->
-      <div class="animate-on-scroll group cursor-pointer" style="transition-delay: 300ms;">
-        <div class="relative h-[380px] rounded-[2rem] overflow-hidden shadow-md group-hover:shadow-xl transition-all duration-500">
-          <img src="24c9dfea-4ce6-430c-9d7c-f17e287bb24b.jfif" alt="Architectural Details" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
-          <div class="absolute bottom-6 left-6 right-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-            <span class="text-green-400 text-xs font-bold uppercase tracking-wider mb-2 block">Architectural Design</span>
-            <h4 class="text-xl font-bold mb-1">Advanced Ceiling Features</h4>
-            <p class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">Flawless execution of complex lighting, texturing, and structural ceiling drops.</p>
+      <article class="animate-on-scroll group cursor-pointer touch-manipulation" style="transition-delay: 300ms;">
+        <div class="relative h-[300px] sm:h-[350px] md:h-[380px] rounded-[1.5rem] md:rounded-[2rem] overflow-hidden shadow-md group-hover:shadow-xl transition-all duration-500">
+          <img src="24c9dfea-4ce6-430c-9d7c-f17e287bb24b.jfif" alt="Architectural Details" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div class="absolute bottom-4 md:bottom-6 left-4 md:left-6 right-4 md:right-6 text-white transform translate-y-2 md:translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+            <span class="text-green-400 text-[10px] md:text-xs font-bold uppercase tracking-wider mb-2 block">Architectural Design</span>
+            <h4 class="text-lg md:text-xl font-bold mb-1">Advanced Ceiling Features</h4>
+            <p class="text-gray-300 text-xs md:text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 line-clamp-2">Flawless execution of complex lighting, texturing, and structural ceiling drops.</p>
           </div>
         </div>
-      </div>
+      </article>
 
-      <!-- Portfolio Item 5 -->
-      <div class="animate-on-scroll group cursor-pointer" style="transition-delay: 400ms;">
-        <div class="relative h-[380px] rounded-[2rem] overflow-hidden shadow-md group-hover:shadow-xl transition-all duration-500">
-          <img src="3.jfif" alt="Urban Multi-Unit" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
-          <div class="absolute bottom-6 left-6 right-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-            <span class="text-green-400 text-xs font-bold uppercase tracking-wider mb-2 block">Commercial Build</span>
-            <h4 class="text-xl font-bold mb-1">Urban Development Phase 2</h4>
-            <p class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">Efficient, high-quality builds maximizing plot value in prime Kigali locations.</p>
+      <article class="animate-on-scroll group cursor-pointer touch-manipulation" style="transition-delay: 400ms;">
+        <div class="relative h-[300px] sm:h-[350px] md:h-[380px] rounded-[1.5rem] md:rounded-[2rem] overflow-hidden shadow-md group-hover:shadow-xl transition-all duration-500">
+          <img src="3.jfif" alt="Urban Multi-Unit" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div class="absolute bottom-4 md:bottom-6 left-4 md:left-6 right-4 md:right-6 text-white transform translate-y-2 md:translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+            <span class="text-green-400 text-[10px] md:text-xs font-bold uppercase tracking-wider mb-2 block">Commercial Build</span>
+            <h4 class="text-lg md:text-xl font-bold mb-1">Urban Development Phase 2</h4>
+            <p class="text-gray-300 text-xs md:text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 line-clamp-2">Efficient, high-quality builds maximizing plot value in prime Kigali locations.</p>
           </div>
         </div>
-      </div>
+      </article>
 
-      <!-- Portfolio Item 6 -->
-      <div class="animate-on-scroll group cursor-pointer" style="transition-delay: 500ms;">
-        <div class="relative h-[380px] rounded-[2rem] overflow-hidden shadow-md group-hover:shadow-xl transition-all duration-500">
-          <img src="3.jpg" alt="Private Villa Build" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
-          <div class="absolute bottom-6 left-6 right-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-            <span class="text-green-400 text-xs font-bold uppercase tracking-wider mb-2 block">Standard Residential</span>
-            <h4 class="text-xl font-bold mb-1">Private Villa Construction</h4>
-            <p class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">Turn-key residential homes built quickly and cleanly for private clients.</p>
+      <article class="animate-on-scroll group cursor-pointer touch-manipulation" style="transition-delay: 500ms;">
+        <div class="relative h-[300px] sm:h-[350px] md:h-[380px] rounded-[1.5rem] md:rounded-[2rem] overflow-hidden shadow-md group-hover:shadow-xl transition-all duration-500">
+          <img src="3.jpg" alt="Private Villa Build" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div class="absolute bottom-4 md:bottom-6 left-4 md:left-6 right-4 md:right-6 text-white transform translate-y-2 md:translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+            <span class="text-green-400 text-[10px] md:text-xs font-bold uppercase tracking-wider mb-2 block">Standard Residential</span>
+            <h4 class="text-lg md:text-xl font-bold mb-1">Private Villa Construction</h4>
+            <p class="text-gray-300 text-xs md:text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 line-clamp-2">Turn-key residential homes built quickly and cleanly for private clients.</p>
           </div>
         </div>
-      </div>
+      </article>
 
-    </div>
+    </section>
 
     <!-- DIGITAL HUB CALL TO ACTION (The "Always Open" Pitch Realized) -->
-    <div id="contact" class="animate-on-scroll bg-black text-white rounded-[3rem] p-10 md:p-20 relative overflow-hidden mb-12 shadow-2xl">
+    <section id="contact" class="animate-on-scroll bg-black text-white rounded-[2rem] md:rounded-[3rem] p-6 sm:p-10 md:p-20 relative overflow-hidden mb-12 shadow-2xl scroll-mt-24" aria-label="Contact and Lead Capture">
       <!-- Decorative Background Elements -->
-      <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
-      <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gray-500/10 rounded-full blur-3xl translate-y-1/3 -translate-x-1/3"></div>
+      <div class="absolute top-0 right-0 w-[400px] md:w-[600px] h-[400px] md:h-[600px] bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
+      <div class="absolute bottom-0 left-0 w-[300px] md:w-[400px] h-[300px] md:h-[400px] bg-gray-500/10 rounded-full blur-3xl translate-y-1/3 -translate-x-1/3"></div>
       
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 relative z-10">
         
         <!-- Left Column: Copy & Form -->
         <div>
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-sm font-medium mb-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-xs sm:text-sm font-medium mb-4 md:mb-6">
             <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
             Accepting High-Intent Clients
           </div>
-          <h2 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">Skip the Friction.<br/>Let's Build.</h2>
-          <p class="text-gray-400 text-lg mb-10 max-w-md">
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 leading-tight">Skip the Friction.<br/>Let's Build.</h2>
+          <p class="text-gray-400 text-base md:text-lg mb-8 md:mb-10 max-w-md">
             Use our automated portal to provide your project details. We review inquiries quickly and are available 7 days a week for execution.
           </p>
 
@@ -409,140 +466,194 @@
           <form class="space-y-4" onsubmit="event.preventDefault(); alert('Lead captured! (Demo)');">
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label class="block text-xs text-gray-400 font-medium mb-1">Full Name</label>
-                <input type="text" class="w-full bg-[#1A1A1A] border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-white/40 transition-colors" placeholder="John Doe" required>
+                <label for="fname" class="block text-xs text-gray-400 font-medium mb-1">Full Name</label>
+                <input type="text" id="fname" class="w-full bg-[#1A1A1A] border border-white/10 rounded-xl px-4 py-3 md:py-4 text-white focus:outline-none focus:border-white/40 transition-colors touch-manipulation" placeholder="John Doe" required>
               </div>
               <div>
-                <label class="block text-xs text-gray-400 font-medium mb-1">Phone Number</label>
-                <input type="tel" class="w-full bg-[#1A1A1A] border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-white/40 transition-colors" placeholder="+250..." required>
+                <label for="phone" class="block text-xs text-gray-400 font-medium mb-1">Phone Number</label>
+                <input type="tel" id="phone" class="w-full bg-[#1A1A1A] border border-white/10 rounded-xl px-4 py-3 md:py-4 text-white focus:outline-none focus:border-white/40 transition-colors touch-manipulation" placeholder="+250..." required>
               </div>
             </div>
             <div>
-              <label class="block text-xs text-gray-400 font-medium mb-1">Project Details</label>
-              <textarea class="w-full bg-[#1A1A1A] border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-white/40 transition-colors h-24 resize-none" placeholder="Briefly describe scale and timeline..."></textarea>
+              <label for="details" class="block text-xs text-gray-400 font-medium mb-1">Project Details</label>
+              <textarea id="details" class="w-full bg-[#1A1A1A] border border-white/10 rounded-xl px-4 py-3 md:py-4 text-white focus:outline-none focus:border-white/40 transition-colors h-24 md:h-28 resize-none touch-manipulation" placeholder="Briefly describe scale and timeline..."></textarea>
             </div>
-            <button type="submit" class="w-full py-4 bg-white text-black font-bold rounded-xl hover:bg-gray-200 transition-colors flex items-center justify-center gap-2">
+            <button type="submit" class="w-full py-4 bg-white text-black font-bold rounded-xl hover:bg-gray-200 transition-colors flex items-center justify-center gap-2 active:scale-95 touch-manipulation shadow-lg">
               Submit Inquiry <i data-lucide="send" class="w-4 h-4"></i>
             </button>
           </form>
         </div>
 
         <!-- Right Column: Verified Info from PDF -->
-        <div class="lg:pl-10 flex flex-col justify-between">
-          <div class="space-y-8">
-            <div class="bg-[#1A1A1A] rounded-[2rem] p-8 border border-white/10 relative overflow-hidden">
-               <div class="absolute right-0 top-0 w-32 h-32 bg-gradient-to-br from-white/5 to-transparent rounded-bl-full pointer-events-none"></div>
+        <div class="lg:pl-10 flex flex-col justify-between mt-6 lg:mt-0">
+          <div class="space-y-6 md:space-y-8">
+            <div class="bg-[#1A1A1A] rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-8 border border-white/10 relative overflow-hidden">
+               <div class="absolute right-0 top-0 w-24 md:w-32 h-24 md:h-32 bg-gradient-to-br from-white/5 to-transparent rounded-bl-full pointer-events-none"></div>
               
-              <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
-                <i data-lucide="clock" class="text-white w-6 h-6"></i> Intense Operating Hours
+              <h3 class="text-xl md:text-2xl font-bold mb-4 md:mb-6 flex items-center gap-3">
+                <i data-lucide="clock" class="text-white w-5 h-5 md:w-6 md:h-6"></i> Intense Operating Hours
               </h3>
               
-              <div class="space-y-4">
-                <div class="flex justify-between items-center py-4 border-b border-white/10">
-                  <span class="text-gray-400 flex items-center gap-2"><i data-lucide="calendar" class="w-4 h-4"></i> Mon - Fri</span>
-                  <span class="font-bold text-white bg-white/10 px-3 py-1 rounded-md text-sm">7:00 AM - 8:00 PM</span>
+              <div class="space-y-3 md:space-y-4">
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0 py-3 md:py-4 border-b border-white/10">
+                  <span class="text-gray-400 flex items-center gap-2 text-sm md:text-base"><i data-lucide="calendar" class="w-4 h-4"></i> Mon - Fri</span>
+                  <span class="font-bold text-white bg-white/10 px-3 py-1 rounded-md text-xs md:text-sm w-max">7:00 AM - 8:00 PM</span>
                 </div>
-                <div class="flex justify-between items-center py-4 border-b border-white/10">
-                  <span class="text-gray-400 flex items-center gap-2"><i data-lucide="calendar-days" class="w-4 h-4"></i> Sat - Sun</span>
-                  <span class="font-bold text-white bg-white/10 px-3 py-1 rounded-md text-sm">9:00 AM - 6:00 PM</span>
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0 py-3 md:py-4 border-b border-white/10">
+                  <span class="text-gray-400 flex items-center gap-2 text-sm md:text-base"><i data-lucide="calendar-days" class="w-4 h-4"></i> Sat - Sun</span>
+                  <span class="font-bold text-white bg-white/10 px-3 py-1 rounded-md text-xs md:text-sm w-max">9:00 AM - 6:00 PM</span>
                 </div>
               </div>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <div class="flex flex-col gap-2 p-6 rounded-2xl bg-white/5 hover:bg-white/10 transition-colors border border-white/5">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+              <div class="flex flex-col gap-2 p-5 md:p-6 rounded-2xl bg-white/5 hover:bg-white/10 transition-colors border border-white/5">
                 <div class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center mb-2">
                   <i data-lucide="map-pin" class="text-white w-5 h-5"></i>
                 </div>
-                <h5 class="font-bold text-sm text-gray-300 uppercase tracking-wider">Headquarters</h5>
-                <p class="text-white font-medium">KG 14 Ave<br/>Kigali, Rwanda</p>
+                <h5 class="font-bold text-xs md:text-sm text-gray-300 uppercase tracking-wider">Headquarters</h5>
+                <p class="text-white font-medium text-sm md:text-base">KG 14 Ave<br/>Kigali, Rwanda</p>
               </div>
               
-              <div class="flex flex-col gap-2 p-6 rounded-2xl bg-white/5 hover:bg-white/10 transition-colors border border-white/5">
+              <div class="flex flex-col gap-2 p-5 md:p-6 rounded-2xl bg-white/5 hover:bg-white/10 transition-colors border border-white/5">
                 <div class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center mb-2">
                   <i data-lucide="phone" class="text-white w-5 h-5"></i>
                 </div>
-                <h5 class="font-bold text-sm text-gray-300 uppercase tracking-wider">Direct Contact</h5>
-                <p class="text-white font-medium text-lg">+250 788 978 847</p>
-                <a href="tel:+250788978847" class="text-sm text-gray-400 hover:text-white mt-1 underline underline-offset-2">Call Now</a>
+                <h5 class="font-bold text-xs md:text-sm text-gray-300 uppercase tracking-wider">Direct Contact</h5>
+                <p class="text-white font-medium text-base md:text-lg">+250 788 978 847</p>
+                <a href="tel:+250788978847" class="text-xs md:text-sm text-gray-400 hover:text-white mt-1 underline underline-offset-2 touch-manipulation py-2 -my-2 w-max">Call Now</a>
               </div>
             </div>
           </div>
         </div>
 
       </div>
-    </div>
+    </section>
   </main>
   
   <!-- Footer Bottom -->
-  <footer class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8 text-center text-sm text-gray-500 border-t border-gray-200 pt-8 mt-12 flex flex-col md:flex-row justify-between items-center gap-4">
+  <footer class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8 text-center text-sm text-gray-500 border-t border-gray-200 pt-8 mt-12 flex flex-col md:flex-row justify-between items-center gap-6">
     <div class="flex items-center gap-3">
-      <img src="image_946dd0.png" alt="RUDAF Logo" class="h-6 w-auto object-contain opacity-80" />
+      <img src="image_946dd0.png" alt="RUDAF Logo" loading="lazy" class="h-6 w-auto object-contain opacity-80" />
       <span class="font-bold text-black text-lg">RUDAF.</span>
-      <span id="copyright-text" class="ml-2"></span>
+      <span id="copyright-text" class="ml-1 text-xs sm:text-sm"></span>
     </div>
-    <div class="flex gap-6">
-      <a href="#" class="hover:text-black transition-colors">Privacy Policy</a>
-      <a href="#" class="hover:text-black transition-colors">Terms of Service</a>
-      <a href="#" class="hover:text-black transition-colors">Corporate Directory</a>
+    <div class="flex flex-wrap justify-center gap-4 sm:gap-6">
+      <a href="#" class="hover:text-black transition-colors py-2 md:py-0 touch-manipulation">Privacy Policy</a>
+      <a href="#" class="hover:text-black transition-colors py-2 md:py-0 touch-manipulation">Terms of Service</a>
+      <a href="#" class="hover:text-black transition-colors py-2 md:py-0 touch-manipulation">Corporate Directory</a>
     </div>
   </footer>
 
   <script>
-    // 1. Initialize Lucide Icons
-    lucide.createIcons();
+    // Note: ensure script runs smoothly without blocking initial UI paint.
+    document.addEventListener("DOMContentLoaded", () => {
+      
+      // 1. Initialize Lucide Icons (handled gracefully if deferred)
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      } else {
+        // Fallback for deferred load
+        window.addEventListener('load', () => lucide.createIcons());
+      }
 
-    // 2. Set current year in footer
-    document.getElementById('copyright-text').innerHTML = `&copy; ${new Date().getFullYear()} Construction LTD. All rights reserved.`;
+      // 2. Set current year in footer
+      document.getElementById('copyright-text').innerHTML = `&copy; ${new Date().getFullYear()} Construction LTD. All rights reserved.`;
 
-    // 3. Mobile Menu Toggle
-    const mobileBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const menuIcon = document.getElementById('menu-icon');
-    const closeIcon = document.getElementById('close-icon');
+      // 3. Mobile Menu Toggle - optimized for fast touch response
+      const mobileBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const menuIcon = document.getElementById('menu-icon');
+      const closeIcon = document.getElementById('close-icon');
 
-    mobileBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-      mobileMenu.classList.toggle('flex');
-      menuIcon.classList.toggle('hidden');
-      closeIcon.classList.toggle('hidden');
-    });
+      mobileBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('flex');
+        menuIcon.classList.toggle('hidden');
+        closeIcon.classList.toggle('hidden');
+      }, { passive: true });
 
-    // 4. Custom Tab Logic for the Lead Capture Bar
-    const tabs = document.querySelectorAll('.tab-btn');
-    tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        // Reset all tabs
-        tabs.forEach(t => {
-          t.classList.remove('border-black', 'text-black');
-          t.classList.add('border-transparent', 'text-gray-400');
+      // Close menu when clicking a link inside it
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          mobileMenu.classList.remove('flex');
+          menuIcon.classList.remove('hidden');
+          closeIcon.classList.add('hidden');
+        }, { passive: true });
+      });
+
+      // 4. Custom Tab Logic for the Lead Capture Bar
+      const tabs = document.querySelectorAll('.tab-btn');
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => {
+            t.classList.remove('border-black', 'text-black');
+            t.classList.add('border-transparent', 'text-gray-400');
+          });
+          tab.classList.remove('border-transparent', 'text-gray-400');
+          tab.classList.add('border-black', 'text-black');
+        }, { passive: true });
+      });
+
+      // 5. High-Performance Intersection Observer for scroll animations
+      const observerOptions = {
+        root: null,
+        rootMargin: '50px', // Load slightly before coming into view
+        threshold: 0.1
+      };
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
         });
-        // Activate clicked tab
-        tab.classList.remove('border-transparent', 'text-gray-400');
-        tab.classList.add('border-black', 'text-black');
+      }, observerOptions);
+
+      document.querySelectorAll('.animate-on-scroll').forEach(element => {
+        observer.observe(element);
       });
-    });
 
-    // 5. Scroll Animations using Intersection Observer
-    const observerOptions = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.1
-    };
+      // 6. Modern Parallax Scroll Animation (Optimized with Passive Listener & RequestAnimationFrame)
+      const heroContainer = document.getElementById('hero-container');
+      const heroVideo = document.getElementById('hero-video');
+      const heroText = document.getElementById('hero-text');
+      let ticking = false;
 
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          // Unobserve so it only animates once per load
-          observer.unobserve(entry.target);
+      window.addEventListener('scroll', () => {
+        if (!ticking) {
+          window.requestAnimationFrame(() => {
+            const scrolled = window.scrollY;
+            
+            // Only calculate if hero is visible (approx. 1 window height)
+            if (scrolled < window.innerHeight) {
+              
+              if (heroContainer) {
+                // Reduced scaling factor on mobile for better UX
+                const isMobile = window.innerWidth < 768;
+                const scaleFactor = isMobile ? 0.00005 : 0.00015;
+                const scale = Math.max(isMobile ? 0.95 : 0.90, 1 - (scrolled * scaleFactor));
+                heroContainer.style.transform = `scale(${scale})`;
+              }
+              
+              if (heroVideo) {
+                // Slower parallax effect on mobile
+                const moveFactor = window.innerWidth < 768 ? 0.2 : 0.4;
+                heroVideo.style.transform = `translateY(${scrolled * moveFactor}px) scale(1.05)`;
+              }
+              
+              if (heroText) {
+                heroText.style.transform = `translateY(${scrolled * 0.2}px)`;
+                heroText.style.opacity = Math.max(0, 1 - (scrolled / 400));
+              }
+            }
+            ticking = false;
+          });
+          ticking = true;
         }
-      });
-    }, observerOptions);
-
-    // Grab all elements with the animation class and observe them
-    document.querySelectorAll('.animate-on-scroll').forEach(element => {
-      observer.observe(element);
+      }, { passive: true }); // passive:true is crucial for mobile scroll performance
     });
   </script>
 </body>
